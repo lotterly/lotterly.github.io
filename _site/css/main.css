@@ -39,6 +39,9 @@ canvas {
 .canvas-sample {
   height: 100px; }
 
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif; }
+
 /**
  * Reset some basic elements
  */
