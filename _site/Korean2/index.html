@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>대한민국 연금복권</title>
+  <meta name="description" content="Copyright © 2020, jckim, All rights reserved
+">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/Korean2/">
+  <link rel="alternate" type="application/rss+xml" title="lotterly" href="http://yourdomain.com/feed.xml">
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">lotterly</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/Korean/">대한민국 로또</a>
+          
+        
+          
+          <a class="page-link" href="/Korean2/">대한민국 연금복권</a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <center><h1 class="post-title">대한민국 연금복권</h1></center>
+  </header>
+
+  <div class="post-content">
+    <center><h1>번호 생성기</h1></center>
+<center><h5 style="margin-bottom:0px;">연금 복권 번호 총 7자리를 생성합니다.<br /> 
+최대 5개까지 생성이 되며, 추가로 원하시면 <b>새로고침</b>됩니다.<br />
+<b>화면 캡처를 이용해 복권을 구매하세요</b></h5></center>
+
+<div class="div_canvas">
+    <center><canvas id="canvas-sample"></canvas></center>
+</div>
+<div id="div-button">
+<center><button id="btn_generator" type="button" style="margin-bottom:15px;" class="generator" onclick="window.generator()">번호 생성</button></center>
+</div>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Google Adsense -->
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5547143505780462" data-ad-slot="1196095930"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<center><h5>이용해주셔서 감사합니다.</h5></center>
+<blockquote>
+
+</blockquote>
+
+<script>
+    var num_of_generator = 0;
+    window.generator = function() {
+        if (num_of_generator > 4) {
+            var btn = document.getElementById("btn_generator")
+            btn.innerHTML = "새로 고침"
+            btn.onclick = function() {
+                location.reload();
+            }
+            return;
+        }
+        var center = document.createElement("center")
+
+        var div = document.createElement("div")
+        div.id = "div_lotto_canvas"
+
+        var canvas = document.createElement("canvas")
+        let canvasID = "canvas-lotto-" + String(num_of_generator)
+        num_of_generator += 1;
+        canvas.id = canvasID
+        //document.getElementById("btn_generator").innerHTML += '<center><canvas id="canvas"></canvas></center>';
+        center.appendChild(canvas)
+        div.appendChild(center)
+        console.log(div)
+        document.getElementById("div-button").appendChild(div)
+        
+        lotto_numbers = generate(1, 1, 7) + '조  ' + generate(1, 4, 9) + '  ' + generate(5, 0, 9)
+        console.log(lotto_numbers)
+        var numbers = document.createElement("h5")
+        numbers.style.cssText='color:black; text-align: center;';
+        numbers.innerHTML = lotto_numbers + "<br>";   
+        //var numbers_text = document.createTextNode(lotto_numbers);
+        //numbers.appendChild(numbers_text);
+        document.getElementById("div-button").appendChild(numbers)
+        console.log(numbers)
+        lotto_numbers = String(lotto_numbers).split(',').join('  ');
+        text_particle(canvasID, lotto_numbers)
+    }
+
+    function generate(size, lowest, highest) {
+            var numbers = [];
+            for(var i = 0; i < size; i++) {
+                var add = true;
+                var randomNumber = Math.floor(Math.random() * highest) + 1;
+                for(var y = 0; y < highest; y++) {
+                    if(numbers[y] == randomNumber) {
+                        add = false;
+                    }
+                }
+                if(add) {
+                    numbers.push(randomNumber);
+                } else {
+                    i--;
+                }
+            }
+        
+            var highestNumber = 0;
+            for(var m = 0; m < numbers.length; m++) {
+                for(var n = m + 1; n < numbers.length; n++) {
+                    if(numbers[n] < numbers[m]) {
+                        highestNumber = numbers[m];
+                        numbers[m] = numbers[n];
+                        numbers[n] = highestNumber;
+                    }
+                }
+            }
+            return numbers
+    }
+</script>
+
+<script type="text/javascript" src="js/text_particle.js"></script>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+    <center>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><a href="mailto:lotterly@gmail.com">lotterly@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Copyright © 2020, jckim, All rights reserved
+</p>
+      </div>
+    </div>
+  </center>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
