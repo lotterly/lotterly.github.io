@@ -252,10 +252,10 @@ var utils = {
   
   fieldvalue = "● ● ● ● ● ●" //document.getElementById("message");
   gravity = parseFloat(0);
-  duration = parseFloat(0.05);
+  duration = parseFloat(0.45);
   resolution = parseFloat(1);
-  speed = parseFloat(0.1);
-  radius = parseFloat(0.1);
+  speed = parseFloat(0.2);
+  radius = parseFloat(0.4);
   
   var message = new shape(W / 2, H / 2 + 50, fieldvalue);
   
