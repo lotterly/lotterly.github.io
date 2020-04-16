@@ -1,13 +1,21 @@
 ---
 layout: page
 title: 대한민국 로또
-permalink: /Korean/
+permalink: /Korean1/
 ---
+<center><img style="max-width: 50%" src="/assets/korean_lottery.jpg"></center>
 
 <center><h1>번호 생성기</h1></center>
 <center><h5 style='margin-bottom:0px;'>로또 번호 총 6자리를 생성합니다. <br> 
 최대 5개까지 생성이 되며, 추가로 원하시면 <b>새로고침</b>됩니다.<br>
 <b>화면 캡처를 이용해 복권을 구매하세요</b></h5></center>
+
+<!-- Kakao AdFit -->
+<ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-t4nbyr8xmxbp" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 <div class="div_canvas">
     <center><canvas id="canvas-sample"></canvas></center>
@@ -15,9 +23,10 @@ permalink: /Korean/
 <div id="div-button">
 <center><button id="btn_generator" type="button" class="generator" style='margin-bottom:15px;'  onclick="window.generator()">번호 생성</button></center>
 </div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 
 <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"

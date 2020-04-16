@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>대한민국 연금복권</title>
+  <title>대한민국 로또</title>
   <meta name="description" content="Copyright © 2020, jckim, All rights reserved
 ">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/Korean2/">
+  <link rel="canonical" href="http://yourdomain.com/Korean1/">
   <link rel="alternate" type="application/rss+xml" title="lotterly" href="http://yourdomain.com/feed.xml">
   <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -63,14 +63,14 @@
         <article class="post">
 
   <header class="post-header">
-    <center><h1 class="post-title">대한민국 연금복권</h1></center>
+    <center><h1 class="post-title">대한민국 로또</h1></center>
   </header>
 
   <div class="post-content">
-    <center><img style="max-width: 50%" src="/assets/korean_lottery2.jpg" /></center>
+    <center><img style="max-width: 50%" src="/assets/korean_lottery.jpg" /></center>
 
 <center><h1>번호 생성기</h1></center>
-<center><h5 style="margin-bottom:0px;">연금 복권 번호 총 7자리를 생성합니다.<br /> 
+<center><h5 style="margin-bottom:0px;">로또 번호 총 6자리를 생성합니다. <br /> 
 최대 5개까지 생성이 되며, 추가로 원하시면 <b>새로고침</b>됩니다.<br />
 <b>화면 캡처를 이용해 복권을 구매하세요</b></h5></center>
 
@@ -82,11 +82,12 @@
     <center><canvas id="canvas-sample"></canvas></center>
 </div>
 <div id="div-button">
-<center><button id="btn_generator" type="button" style="margin-bottom:15px;" class="generator" onclick="window.generator()">번호 생성</button></center>
+<center><button id="btn_generator" type="button" class="generator" style="margin-bottom:15px;" onclick="window.generator()">번호 생성</button></center>
 </div>
-<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <!-- Google Adsense -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5547143505780462" data-ad-slot="1196095930"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
@@ -122,7 +123,7 @@
         console.log(div)
         document.getElementById("div-button").appendChild(div)
         
-        lotto_numbers = generate(1, 1, 7) + '조  ' + generate(1, 4, 9) + '  ' + generate(5, 0, 9)
+        lotto_numbers = generate(6, 1, 45)
         console.log(lotto_numbers)
         var numbers = document.createElement("h5")
         numbers.style.cssText='color:black; text-align: center;';

@@ -3,11 +3,19 @@ layout: page
 title: 대한민국 연금복권
 permalink: /Korean2/
 ---
+<center><img style="max-width: 50%" src="/assets/korean_lottery2.jpg"></center>
 
 <center><h1>번호 생성기</h1></center>
 <center><h5 style='margin-bottom:0px;'>연금 복권 번호 총 7자리를 생성합니다.<br> 
 최대 5개까지 생성이 되며, 추가로 원하시면 <b>새로고침</b>됩니다.<br>
 <b>화면 캡처를 이용해 복권을 구매하세요</b></h5></center>
+
+<!-- Kakao AdFit -->
+<ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-t4nbyr8xmxbp" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 <div class="div_canvas">
     <center><canvas id="canvas-sample"></canvas></center>
