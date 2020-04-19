@@ -26,6 +26,7 @@ permalink: /Korean1/
 
 
 <!-- Google Adsense -->
+<script data-ad-client="ca-pub-5547143505780462" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
