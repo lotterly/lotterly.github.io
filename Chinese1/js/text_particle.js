@@ -250,7 +250,7 @@ var utils = {
     );
   }
   
-  fieldvalue = "● ● ● ● ● ●" //document.getElementById("message");
+  fieldvalue = "● ● ● ● ● / ●" //document.getElementById("message");
   gravity = parseFloat(0);
   duration = parseFloat(0.45);
   resolution = parseFloat(1);
