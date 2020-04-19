@@ -36,7 +36,6 @@ The number is created through up to 5 times, and you can <b>refresh</b> it if yo
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<center><h5>Thank you.</h5></center>>
 
 <script>
     var num_of_generator = 0;
