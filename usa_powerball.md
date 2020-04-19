@@ -5,7 +5,7 @@ permalink: /USA_powerball/
 ---
 <center><img style="max-width: 50%" src="/assets/usa-powerball.png"></center>
 
-<center><h1>Number Generator</h1></center>
+<center><h1>USA Powerball Number Generator</h1></center>
 <center><h5 style='margin-bottom:0px;'>Generate a total of 6 digits of the lotto number. <br> 
 The number is created through up to 5 times, and you can <b>refresh</b> it if you want.<br>
 <b>Please purchase a lottery ticket using a screen capture</b></h5></center>
@@ -42,7 +42,7 @@ The number is created through up to 5 times, and you can <b>refresh</b> it if yo
     window.generator = function() {
         if (num_of_generator > 4) {
             var btn = document.getElementById("btn_generator")
-            btn.innerHTML = "새로 고침"
+            btn.innerHTML = "Refresh"
             btn.onclick = function() {
                 location.reload();
             }
