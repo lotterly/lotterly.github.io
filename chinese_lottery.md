@@ -5,9 +5,9 @@ permalink: /Chinese2/
 ---
 <center><img style="max-width: 30%" src="/assets/chinese-lottery-2.png"></center>
 
-<center><h1>超级大乐透 数字生成器</h1></center>
-<center><h5 style='margin-bottom:0px;'>总共生成7位彩票号码 <br> 
-最多生成五个号码，如需添加号码，页面将会刷新<br>
+<center><h1>超级大乐透 号码生成器</h1></center>
+<center><h5 style='margin-bottom:0px;'>总共可生成7位彩票号码 <br> 
+最多生成五组号码，如需要更多号码，页面将会刷新<br>
 <b>请将本页面截图</b></h5></center>
 
 <!-- Kakao AdFit -->
