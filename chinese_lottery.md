@@ -3,7 +3,7 @@ layout: page
 title: 超级大乐透
 permalink: /Chinese2/
 ---
-<center><img style="max-width: 50%" src="/assets/chinese-lottery-1.jpg"></center>
+<center><img style="max-width: 30%" src="/assets/chinese-lottery-2.png"></center>
 
 <center><h1>超级大乐透 数字生成器</h1></center>
 <center><h5 style='margin-bottom:0px;'>总共生成6位彩票号码 <br> 
