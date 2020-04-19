@@ -110,7 +110,7 @@ var utils = {
   // basic setup  :)
   canvas = document.getElementById("canvas-sample");
   var ctx = canvas.getContext("2d");
-  W = canvas.width = window.innerWidth*2.4;
+  W = canvas.width = window.innerWidth*2;
   H = canvas.height = window.innerHeight/8;
   
   gridX = 5;
@@ -250,9 +250,9 @@ var utils = {
     );
   }
   
-  fieldvalue = "● + ● ● ● ● ● ●" //document.getElementById("message");
+  fieldvalue = "● ● ● ● ● ●" //document.getElementById("message");
   gravity = parseFloat(0);
-  duration = parseFloat(0.4);
+  duration = parseFloat(0.45);
   resolution = parseFloat(1);
   speed = parseFloat(0.2);
   radius = parseFloat(0.4);

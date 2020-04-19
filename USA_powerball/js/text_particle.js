@@ -110,7 +110,7 @@ var utils = {
   // basic setup  :)
   canvas = document.getElementById("canvas-sample");
   var ctx = canvas.getContext("2d");
-  W = canvas.width = window.innerWidth*2.4;
+  W = canvas.width = window.innerWidth*2;
   H = canvas.height = window.innerHeight/8;
   
   gridX = 5;
