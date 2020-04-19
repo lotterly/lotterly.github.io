@@ -36,7 +36,6 @@ permalink: /Korean2/
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<center><h5>이용해주셔서 감사합니다.</h5></center>>
 
 <script>
     var num_of_generator = 0;
